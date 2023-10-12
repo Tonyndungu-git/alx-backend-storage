@@ -1,0 +1,6 @@
+-- selects bandname and year with glamrock
+SELECT band_name, 
+       YEAR('2022-01-01') - CAST(SUBSTRING_INDEX(formed, '-', 1) AS UNSIGNED) as lifespan
+FROM metal_bands
+WHERE style = 'Glam rock'
+ORDER BY lifespan DESC;
