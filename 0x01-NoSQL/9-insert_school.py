@@ -1,5 +1,6 @@
-#!usr/bin/env python3
-''' insert a new document in a collection '''
+#!/usr/bin/env python3
+'''Task 9's module.
+'''
 
 
 def insert_school(mongo_collection, **kwargs):
